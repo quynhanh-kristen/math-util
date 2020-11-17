@@ -25,7 +25,7 @@ public class MathUtil {
         //e:1, a:1 -> ok
         
         //e: ném về IllegalArgumentException nếu giai thừa -5
-        System.out.println("-5! : " + fu.util.MathUtility.getFatorial(-5));
+//        System.out.println("-5! : " + fu.util.MathUtility.getFatorial(-5));
         
     }
     
