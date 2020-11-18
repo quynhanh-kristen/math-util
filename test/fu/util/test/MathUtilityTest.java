@@ -21,11 +21,7 @@ public class MathUtilityTest {
         //Fail and succeed situation
         //thành công: 0...20
         //thất bại: âm , >20
-        //hàm phải bắt các tình huống, và giờ test hàm xử lý
-        
-         
-        
-        
+        //hàm phải bắt các tình huống, và giờ test hàm xử lý    
     }
     @Test //biến public static void main ()
         //quy tắc đặt tên hàm bao gồm ngữ nghĩa kết quả trả về, tình trạng test
@@ -46,8 +42,5 @@ public class MathUtilityTest {
     
     //họp logic thì màu xanh, chuẩn thì mới đóng gói
     //vậy ta cần có một gài xanh đỏ vào quy trình BULD .JAR, .WAR
-    //cách khác: nếu code test đang màu đỏ thì disable nut clean and build
-    
-    
-    
+    //cách khác: nếu code test đang màu đỏ thì disable nut clean and build 
 }
