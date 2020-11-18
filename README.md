@@ -10,4 +10,6 @@
 ### Connect me via:
 [Facebook](https://www.facebook.com/honeymoon0609/)
 
+![Image of usagyun](https://media.tenor.com/images/ae48f2b25a4778634cf4249819481b7e/tenor.gif)
+
 #### © 20220 by quynhanh | FPT University, HCMC
