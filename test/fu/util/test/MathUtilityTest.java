@@ -53,7 +53,7 @@ public class MathUtilityTest {
     //bắt ngoại lệ
     //Exception o phải là một value, ko dùng assertX đc()
     //phải dùng kỹ thuật khác
-    @Test(expected = SQLException.class )
+    @Test(expected = IllegalArgumentException.class)
     public void getFractorial_ThrowsException_IfInvalidArgument(){
         MathUtility.getFatorial(-5);
     }
