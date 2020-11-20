@@ -1,4 +1,4 @@
-/*
+                                                                                                            /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -12,9 +12,9 @@ import static org.junit.Assert.*;
 /**
  *
  * @author DELL
- */ 
+ */
 public class MathUtilityTest {
-    
+
     public MathUtilityTest() {
         //mình sẽ test các tình huống xài hàm getFatorial() ở đây
         //test cases: dương âm , trong khoảng
@@ -23,9 +23,14 @@ public class MathUtilityTest {
         //thất bại: âm , >20
         //hàm phải bắt các tình huống, và giờ test hàm xử lý    
     }
-    @Test //biến public static void main ()
-        //quy tắc đặt tên hàm bao gồm ngữ nghĩa kết quả trả về, tình trạng test
-        //ko giống quy tắc đặt tên hàm
+
+    @Test
+    //biến public static void main (), nhờ bộ thư viện JUnit
+    //ko cần main chuẩn, vì chỉ cần test hàm
+    //quy tắc đặt tên hàm bao gồm ngữ nghĩa kết quả trả về, tình trạng test
+    //ko giống quy tắc đặt tên hàm
+    //F6 dành cho main default
+    //Shift + F6 dành cho bên này
     public void getFactorial_RunsWell_IfvalidArgument() {
         assertEquals(120, MathUtility.getFatorial(5));
         assertEquals(720, MathUtility.getFatorial(6));
@@ -39,8 +44,16 @@ public class MathUtilityTest {
     //code test độc lập với code chính và đôc5 lập với quá trình clean and buil
     //miễn là ko lỗi cú pháp
     //bn luôn đóng góp build ra đc FILE .JAR .WAR (chấp xanh đỏ)
-    
+
     //họp logic thì màu xanh, chuẩn thì mới đóng gói
     //vậy ta cần có một gài xanh đỏ vào quy trình BULD .JAR, .WAR
     //cách khác: nếu code test đang màu đỏ thì disable nut clean and build 
+    
+    //bắt ngoại lệ
+    //Exception o phải là một value, ko dùng assertX đc()
+    //phải dùng kỹ thuật khác
+    @Test(expected = IllegalArgumentException.class )
+    public void getFractorial_ThrowsException_IfInvalidArgument(){
+        MathUtility.getFatorial(-5);
+    }
 }
