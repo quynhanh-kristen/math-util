@@ -6,6 +6,7 @@
 package fu.util.test;
 
 import fu.util.MathUtility;
+import java.sql.SQLException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -52,8 +53,10 @@ public class MathUtilityTest {
     //bắt ngoại lệ
     //Exception o phải là một value, ko dùng assertX đc()
     //phải dùng kỹ thuật khác
-    @Test(expected = IllegalArgumentException.class )
+    @Test(expected = SQLException.class )
     public void getFractorial_ThrowsException_IfInvalidArgument(){
         MathUtility.getFatorial(-5);
     }
+    
+    
 }
